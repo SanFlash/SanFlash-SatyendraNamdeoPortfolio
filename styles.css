@@ -1,0 +1,198 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #141E30, #243B55);
+    color: white;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFD700 !important;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #FFD700;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+hr {
+    border: #1e3c72;  
+    height: 10px;  
+    background-color: black;  
+    margin: 20px 0;  
+}
+
+.profile,
+.projects,
+.skills,
+.contact {
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    color: #FFD700;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.contact p {
+    text-align: center;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.skills .row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.skills .col-md-4 {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.skills .col-md-4:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
+}
+.education, .skills, .projects, .reference {
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    color: #FFD700;
+    margin-bottom: 30px;
+}
+
+.edu-card {
+    background: rgba(255, 255, 255, 0.1);
+    height: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    height: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.edu-card:hover, .project-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.skills li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.contact p, .reference p {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
+}
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+.navbar .nav-link {
+    color: white !important;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+.navbar .nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Skills Progress Bar */
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+.skills ul li {
+    background: #2a5298;
+    color: white;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+}

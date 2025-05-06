@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Bootstrap & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Updated Project Card */
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            height:330px;
+            border-radius: 10px;
+            margin: 10px 0;
+            text-align: center;
+            color: #eee9e9;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            background: rgba(79, 89, 235, 0.356);
+        }
+
+        /* Skills Section */
+        .skills-used {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .skills-used ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-used li {
+            background: rgb(248, 245, 245);
+            padding: 8px;
+            margin: 5px;
+            border-radius: 5px;
+            display: inline-block;
+            color: white;
+        }
+
+        /* Pie Chart Container */
+        .chart-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 95%;
+            width: 200px;
+            height: 200px;
+            display: none; /* Initially hidden */
+            background: rgba(159, 180, 238, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            
+        }
+
+        /* Animation */
+        .project-card.active .chart-container {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out;
+            
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .skills {
+    padding: 60px 0;
+    color: #e0e0e0;
+}
+
+.skill-box {
+    margin-bottom: 20px;
+}
+
+.skill-box p {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 8px;
+    width: 0;
+    background: linear-gradient(45deg, #ff8c00, #ff4500);
+    transition: width 1.5s ease-in-out;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Satyendra Kumar Namdeo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#Experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">   
+        <div class="container text-center">
+            <h1>My Tech Journey: Projects, Experience and Skills</h1>
+            <p>A look at my work, experience, and skills—showing what I have built and learned.</p>
+        </div>
+    </header>
+
+
+    <section id="skills" class="skills container">
+        <br><br>
+        <h2 data-aos="fade-up">TECHNICAL / SOFT SKILLS</h2>
+        <div class="row">
+            <!-- Technical Skills -->
+            <div class="col-md-6">
+                <h3>Technical Skills</h3>
+                <div class="skill-box">
+                    <p>Python <span class="skill-percent">80%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="90"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <p>SQL <span class="skill-percent">85%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="85"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <p>Power BI <span class="skill-percent">80%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="80"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <p>ASP.NET <span class="skill-percent">85%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="75"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <p>Data Visualization <span class="skill-percent">85%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="85"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <p>Figma <span class="skill-percent">80%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="70"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Projects Section -->
+    <section class="projects" id="project">
+        <div class="container">
+            <h2 style="color: rgb(255, 255, 255);">Recent Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    
+                    <div class="project-card" onclick="toggleChart(this, 'chartOne', ['ASP.NET','C#', 'CSS', 'SQL'], [40, 20, 15,25])">
+
+                        <h3>Scholar Ultimate Matrix</h3>
+                        <p>Scholar Ultimate Matrix is a cutting-edge web platform meticulously
+                            crafted using ASP.NET and SQL software, tailor-made for the unique
+                            needs of educational institutes. This dynamic website serves as a
+                            centralized hub, fostering seamless communication, efficient
+                            management, and collaborative learning within the institute</p>
+                        <!-- Skills Used -->
+                        <div class="skills-used">
+                            <a href="image/SUM DOC.docx">Doc File</a>
+                        </div>
+                        <!-- Pie Chart -->
+                        <div class="chart-container">
+                            <canvas id="chartOne"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="project-card" onclick="toggleChart(this, 'chartTwo', ['PowerBI','Data Visualization','Statistics'], [50, 20,30])">
+
+                        <h3>IPL 08-24 Data Analysis</h3>
+                        <p>This project focuses on analyzing IPL data from 2008 to 2024 using
+                            Power BI for powerful visualizations. It provides insights into team
+                            performance, player statistics, match outcomes, and trends over the
+                            years. With interactive dashboards and charts and make data-driven conclusions about IPL
+                            seasons.</p>
+                        <div class="skills-used">
+                            <a href="https://github.com/SanFlash/IPL_08-24_Data_Analysis.com/blob/main/IPL.pbix/">Doc File</a>
+                            
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chartTwo"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="project-card" onclick="toggleChart(this, 'chartThree', ['HTML','CSS','JavaScript','Cloudinary'], [50, 25,15,10])">
+                        <h3>Vastukala-Infrastructure</h3>
+                        <p>A sleek, responsive site built with HTML, CSS, JS, and Cloudinary,
+                            showcasing 3D designs, structural plans, and architectural services
+                            with stunning visuals and smooth navigation.</p>
+                            
+                        <div class="skills-used">
+                            <br><br><br>
+                            <a href="https://github.com/SanFlash/IPL_08-24_Data_Analysis.com/blob/main/IPL.pbix/">Link</a>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chartThree"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="project-card" onclick="toggleChart(this, 'chartFour', ['HTML','CSS','JavaScript','API'], [30, 25,40,5])">
+                        <h3>EchoART</h3>
+                        <p>EchoArt is an AI tool that creates images from voice prompts. Just speak your idea, and EchoArt transforms it into a unique, high-quality image. Ideal for artists, creators, or anyone wanting to bring ideas to life, EchoArt combines voice recognition and advanced AI to make visual creativity fast and effortless.
+                        </p>
+                        <div class="skills-used">
+                            <a href="https://sanflash.github.io/EchoArt.com/">Link</a>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chartFour"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="project-card" onclick="toggleChart(this, 'chartFive', ['HTML', 'CSS', 'JavaScript'], [40, 35, 25])">
+                        <h3>Darshan Hotel</h3>
+                        <p>Darshan Hotel is a sleek and interactive booking platform built with HTML, CSS, and JavaScript. Designed for a seamless user experience, it allows visitors to explore rooms, check availability, and make reservations effortlessly. With a modern, responsive design and smooth animations (Front-end only)</p>
+                        <div class="skills-used">
+                            <a href="https://sanflash.github.io/DarshanHotel.com/">Link</a>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chartFive"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-4">
+                    <div class="project-card" onclick="toggleChart(this, 'chartSeven', ['HTML', 'CSS', 'JavaScript', 'UI/UX'], [25, 25, 30, 20])">
+                        <h3>Pet Adoption Center</h3>
+                        <p>The Pet Adoption Center website helps homeless pets find loving homes. It offers information on available pets for adoption, the adoption process, and additional services like grooming and training, encouraging visitors to give pets a second chance. With a modern, responsive design and smooth animations (Front-end only)</p>
+                        
+                        <div class="skills-used">
+                            <a href="https://sanflash.github.io/petAdoption.com/">Link</a>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chartSeven"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="col-md-4">
+                    <div class="project-card" onclick="toggleChart(this, 'chartEight', ['HTML', 'CSS', 'Python', 'ML'], [10, 10, 50, 30])">
+                        <h3>Super15</h3>
+                        <p>A smart, machine learning-driven platform that forecasts the top 15 players for upcoming matches. It analyzes historical data, player form, venue stats, and opposition data for prediction, data-backed recommendations. Whether you're a fantasy league player or a cricket strategist, Super15 helps you make informed, winning picks.</p>
+                        
+                        <div class="skills-used">
+                            <a href="image/PPT-PROJECT.pptx">PPT</a>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chartEight"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-md-4">
+                    <div class="project-card" onclick="toggleChart(this, 'chartSix', ['Circuit designing','Arduino'], [60, 40])">
+
+                        <h3>SMART EXTINGUISHER</h3>
+                        <p>An IoT-based project that uses different sensors and an Arduino to
+                            create a smart system. The system collects data from sensors, turns on
+                            water sprinklers automatically, and sends SMS alerts when needed.
+                            This project helps save resources, works automatically, and is useful
+                            for farming, monitoring the environment, and smart homes
+    </p>
+                        <div class="skills-used">
+                            <p></p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="chartSix"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="Experience">
+        <br><br><br>
+        <div class="container">
+            <h2 style="color: blanchedalmond;">Internship Experience</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="project-card" onclick="toggleChart(this, 'analystChart', ['SQL', 'Analysis', 'Python', 'Data Visualization','PowerBI'], [20, 20, 20, 20,20])">
+                        <h3>Data Analyst Intern</h3>
+                        <p><strong>Company:</strong> Anudip Foundation</p>
+                        <p><strong>Duration:</strong> November 2024 - March 2025</p>
+                        <p>Worked as a Data Analyst Intern at Anudip Foundation, where I optimized SQL queries for faster data processing and team efficiency. Performed exploratory data analysis (EDA) on complex datasets to identify key trends and patterns, delivering actionable insights for strategic decisions.</p>
+                        
+                        <!-- Skills Used -->
+                        <div class="skills-used"></div>
+                    
+                        <!-- Pie Chart -->
+                        <div class="chart-container">
+                            <canvas id="analystChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="project-card" onclick="toggleChart(this, 'internChart', ['ASP.NET', 'C#', 'SQL', 'API'], [40, 30, 20, 10])">
+                        <h3>ASP.NET Developer Intern</h3>
+                        <p><strong>Company:</strong> VISHWATECH Education</p>
+                        <p><strong>Duration:</strong> September 2023 - February 2024</p>
+                        <p>Worked as an ASP.NET Developer Intern at VISHWATECH Education, where I developed dynamic web applications using <b>ASP.NET, C#, and SQL</b>. Gained hands-on experience in backend API development and database optimization.</p>
+                        
+                        <!-- Skills Used -->
+                        <div class="skills-used"></div>
+                
+                        <!-- Pie Chart -->
+                        <div class="chart-container">
+                            <canvas id="internChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="contact" class="contact container" data-aos="fade-up" style="color: #e0e0e0;">
+        <h2 style="color: #e0e0e0;">Contact Me</h2>
+        <p><i class="fas fa-phone"></i><a href="tel:+917582085292">+91 7582085292</a></p>
+        <p><i class="fas fa-envelope"></i><a href="mailto:satyendranamdeo78130@gmail.com" target="_blank"> Gmail</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/SanFlash" target="_blank">Github</a></p>
+        <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/_n._.satyen_?igsh=NHI1dHh4ZzhsMmo=" target="_blank">@satyennamdeo</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/satyendra-namdeo-334162357/" target="_blank">@SatyendraNamdeo</a></p>
+
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer" style="color: #e0e0e0;">
+        <p>&copy; 2025 My Portfolio | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const progressBars = document.querySelectorAll(".progress-bar");
+
+    function animateProgressBars() {
+        progressBars.forEach((bar) => {
+            const value = bar.getAttribute("data-percent");
+            bar.style.width = value + "%";
+        });
+    }
+
+    function checkScroll() {
+        const skillsSection = document.querySelector("#skills");
+        const sectionTop = skillsSection.getBoundingClientRect().top;
+        const triggerPoint = window.innerHeight - 100;
+
+        if (sectionTop < triggerPoint) {
+            animateProgressBars();
+            window.removeEventListener("scroll", checkScroll);
+        }
+    }
+
+    window.addEventListener("scroll", checkScroll);
+});
+
+    </script>
+<script>
+    function createChart(chartId, dataValues, labels) {
+        var ctx = document.getElementById(chartId).getContext('2d');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: dataValues,
+                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56','#ff8c00'],
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false }, // Hides default legend
+                    datalabels: {
+                        color: '#fff', // Text color inside the pie chart
+                        font: { weight: 'bold', size: 14 },
+                        formatter: (value, ctx) => {
+                            return ctx.chart.data.labels[ctx.dataIndex]; // Show skill name
+                        }
+                    }
+                }
+            },
+            plugins: [ChartDataLabels] // Activating Data Labels Plugin
+        });
+    }
+
+    function toggleChart(card, chartId, skills, percentages) {
+        let isActive = card.classList.contains("active");
+        document.querySelectorAll(".project-card").forEach(card => card.classList.remove("active"));
+        if (!isActive) {
+            card.classList.add("active");
+            setTimeout(() => createChart(chartId, percentages, skills), 200);
+        }
+    }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
