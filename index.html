@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyendra Namdeo - Portfolio</title>
+
+    <!-- Bootstrap & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .skills {
+    padding: 60px 0;
+}
+
+.skill-box {
+    margin-bottom: 20px;
+}
+
+.skill-box p {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 8px;
+    width: 0;
+    background: linear-gradient(45deg, #ff8c00, #ff4500);
+    transition: width 1.5s ease-in-out;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Satyendra Kumar Namdeo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero text-center">
+        <div class="container">
+            <h1 data-aos="fade-up">SATYENDRA KUMAR NAMDEO</h1>
+            <p data-aos="fade-up" data-aos-delay="200">MCA STUDENT</p>
+        </div>
+    </header>
+
+    <hr>
+
+    <!-- Profile Section -->
+    <section id="profile" class="profile container" data-aos="fade-up">
+        <br><br><br><br><br><br><br><br>
+        <h2>OBJECTIVE</h2>
+        <p style="text-align: center;">My academic journey has equipped me with a strong technical base in ASP.NET,
+         Python, and data visualization. I'm a highly motivated individual seeking a role within an innovative 
+         team where I can contribute my skills, embrace new challenges, and grow alongside talented colleagues.</p>
+    </section>
+<hr>
+    <!-- Education Section -->
+    <section id="education" class="education container">
+        <br><br><br><br><br><br>
+        <h2 data-aos="fade-up">EDUCATION</h2>
+        <div class="row">
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="edu-card">
+                    <h3>Master of Computer Applications</h3>
+                    <p>UIT-RGPV BHOPAL</p>
+                    <p>8.13 CGPA</p>
+                    <span>2023 - Present</span>
+
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="edu-card">
+                    <h3>Bachelor of Technology</h3>
+                    <p>Laxmi Narain College of Technology, Bhopal</p>
+                    <p>8.77 CGPA</p>
+                    <span>2019 - 2023</span>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="edu-card">
+                    <h3>12th (Mathematics-Science)</h3>
+                    <p>Renaissance Divine Public School, Bhopal</p>
+                    <p>65.8%</p>
+                    <span>2018 - 2019</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- Projects Section -->
+    <section id="projects" class="projects container">
+        <br><br><br><br><br><br>
+        <h2 data-aos="fade-up">PROJECTS</h2>
+        <div class="row">
+            
+            <div class="col-md-6" data-aos="zoom-in">
+                <div class="project-card">
+                    <h3>Scholar Ultimate Matrix</h3>
+                    <p>Scholar Ultimate Matrix is an ASP.NET and SQL-based platform designed for educational institutes, enabling seamless communication, efficient management, and collaborative learning.
+                        </p>
+                </div>
+            </div>
+
+            <div class="col-md-6" data-aos="zoom-in">
+                <div class="project-card">
+                    <h3>Vastukala-Infrastructure</h3>
+                    <p>A responsive site using HTML, CSS, JS, and Cloudinary, showcasing 3D designs, structural plans, and architectural services.
+                        </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" data-aos="zoom-in">
+                <div class="project-card">
+                    <h3>IPL 08-24 Data Analysis</h3>
+                    <p>This Power BI project analyzes IPL data (2008-2024) with interactive dashboards, providing insights into team performance, player stats, match outcomes, and trends.
+                        </p>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="zoom-in">
+                <div class="project-card">
+                    <h3>EchoART</h3>
+                    <p>EchoArt uses AI to turn voice prompts into unique images, making visual creation easy for artists and creators.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-6" data-aos="zoom-in" style="width:100%;" onclick="window.location.href='project.html'">
+                <div class="project-card" style="height: 60px;">
+                    
+                    <h4>View More....</h4>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <hr>
+    <!-- Skills Section -->
+    <section id="skills" class="skills container">
+        <br><br><br><br><br><br>
+        <h2 data-aos="fade-up">TECHNICAL / SOFT SKILLS</h2>
+        <div class="row">
+            <!-- Technical Skills -->
+            <div class="col-md-6">
+                <h3>Technical Skills</h3>
+                <div class="skill-box">
+                    <p>Python <span class="skill-percent">80%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="90"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <p>SQL <span class="skill-percent">85%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="85"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <p>Power BI <span class="skill-percent">80%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="80"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <p>ASP.NET <span class="skill-percent">85%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="75"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <p>Data Visualization <span class="skill-percent">85%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="85"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <p>Figma <span class="skill-percent">80%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="70"></div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Soft Skills -->
+            <div class="col-md-6">
+                <h3>Soft Skills</h3>
+                <div class="skill-box">
+                    <p>Leadership <span class="skill-percent">90%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="90"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <p>Problem-Solving <span class="skill-percent">85%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="85"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <p>Time Management <span class="skill-percent">80%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="80"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <p>Team Work <span class="skill-percent">85%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="85"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <p>Critical Thinking <span class="skill-percent">75%</span></p>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="75"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <hr>
+    <!-- Reference Section -->
+    <section class="reference container" data-aos="fade-up">
+        <br><br><br><br><br><br>
+        <h2>REFERENCE</h2>
+        <p><strong>ARJUN SIR</strong></p>
+        <p>FACULTY</p>
+        <p>VISHWATECH EDUCATION, Bhopal</p>
+        <p><a href="tel:+91 9669505606">+91 9669505606</a></p>
+    </section>
+    <hr>
+    <!-- Contact Section -->
+    <section id="contact" class="contact container" data-aos="fade-up">
+        <br><br><br><br><br><br>
+        <h2>CONTACT</h2>
+        <p><i class="fas fa-phone"></i><a href="tel:+917582085292">+91 7582085292</a></p>
+        <p><i class="fas fa-envelope"></i><a href="mailto:satyendranamdeo78130@gmail.com" target="_blank"> Gmail</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/SanFlash" target="_blank">Github</a></p>
+        <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/_n._.satyen_?igsh=NHI1dHh4ZzhsMmo=" target="_blank">@satyennamdeo</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/satyendra-namdeo-334162357/" target="_blank">@SatyendraNamdeo</a></p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Satyendra Namdeo | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript & AOS Init -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const progressBars = document.querySelectorAll(".progress-bar");
+
+    function animateProgressBars() {
+        progressBars.forEach((bar) => {
+            const value = bar.getAttribute("data-percent");
+            bar.style.width = value + "%";
+        });
+    }
+
+    function checkScroll() {
+        const skillsSection = document.querySelector("#skills");
+        const sectionTop = skillsSection.getBoundingClientRect().top;
+        const triggerPoint = window.innerHeight - 100;
+
+        if (sectionTop < triggerPoint) {
+            animateProgressBars();
+            window.removeEventListener("scroll", checkScroll);
+        }
+    }
+
+    window.addEventListener("scroll", checkScroll);
+});
+
+    </script>
+</body>
+</html>
