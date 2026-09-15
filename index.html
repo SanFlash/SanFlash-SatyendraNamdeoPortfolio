@@ -1,94 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Satyendra Kumar Namdeo — QA Automation Engineer, SDET and AI-assisted software builder.">
-  <meta name="theme-color" content="#08111f">
-  <title>Satyendra Kumar Namdeo — QA Automation × AI</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Satyendra Kumar Namdeo — SDET / QA Automation Engineer building AI-assisted quality systems, automation and full-stack products.">
+<meta name="theme-color" content="#050914">
+<title>Satyendra Kumar Namdeo — SDET × AI × Automation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"><link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="noise"></div>
-  <div class="cursor-glow" id="cursorGlow"></div>
+<div class="noise"></div><div class="cursor-glow" id="cursorGlow"></div><div id="scrollProgress"></div>
+<nav class="nav glass" id="topNav">
+  <a class="brand" href="#home"><span class="brand-mark">SN</span><b>Satyendra</b></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open navigation"><i class="bi bi-list"></i></button>
+  <div class="nav-links"><a href="#about">About</a><a href="#work">Work</a><a href="#skills">Stack</a><a href="#journey">Journey</a><a href="#contact">Contact</a></div>
+  <div class="nav-actions"><a class="icon-btn" href="https://github.com/SanFlash" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a><a class="icon-btn" href="https://www.linkedin.com/in/satyendra-namdeo/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></div>
+</nav>
 
-  <nav class="nav glass" id="topNav">
-    <a class="brand" href="#home" aria-label="Satyendra Namdeo home"><span>SN</span><b>Satyendra</b></a>
-    <button class="nav-toggle" id="navToggle" aria-label="Open menu"><i class="bi bi-list"></i></button>
-    <div class="nav-links" id="navLinks">
-      <a href="#about">About</a><a href="#work">Work</a><a href="#skills">Stack</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
-    </div>
-    <div class="nav-actions">
-      <a class="icon-btn" href="https://github.com/SanFlash" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
-      <a class="icon-btn" href="https://www.linkedin.com/in/satyendra-namdeo/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-    </div>
-  </nav>
+<main id="home">
+<section class="hero wrap">
+  <div class="hero-copy reveal">
+    <div class="eyebrow"><span class="status-dot"></span>SDET · QA AUTOMATION · AI-ASSISTED ENGINEERING</div>
+    <h1>I break products<br><span class="gradient">to make them better.</span></h1>
+    <p class="hero-sub">Satyendra Kumar Namdeo combines quality engineering, web & mobile automation, API/database validation and AI-assisted development to turn real workflows into reliable software.</p>
+    <div class="hero-ctas"><a class="btn btn-primary magnetic" href="#work">Explore the work <i class="bi bi-arrow-down-right"></i></a><a class="btn btn-ghost magnetic" href="explore.html">Deep-dive portfolio <i class="bi bi-grid-3x3-gap"></i></a></div>
+    <div class="hero-stats"><span><strong>Web</strong> Playwright</span><span><strong>Mobile</strong> Appium</span><span><strong>Backend</strong> REST + SQL</span><span><strong>AI</strong> Prompt workflows</span></div>
+  </div>
+  <div class="avatar-stage reveal" id="avatarStage" aria-label="Interactive Satyendra avatar">
+    <div class="float-orbit orbit-a"></div><div class="float-orbit orbit-b"></div><span class="orbit-dot"></span>
+    <div class="avatar-frame"><img id="heroAvatar" alt="Satyendra avatar reference portrait" src="data:image/webp;base64,UklGRv5LAABXRUJQVlA4IPJLAAAQrw...AVATAR_DATA_PLACEHOLDER..."><div class="avatar-badge"><strong>Satyendra Kumar Namdeo</strong><span>SDET · QA Automation · AI-assisted builder</span></div></div>
+    <div class="avatar-side-card"><b>IDENTITY LOCK</b>multi-angle reference · consistent visual profile</div>
+    <div class="signal" id="signalDial"><div class="signal-top"><span>QUALITY SIGNAL</span><strong id="signalValue">62%</strong></div><div class="signal-bar"><i></i></div></div>
+  </div>
+</section>
 
-  <main id="home">
-    <section class="hero section-pad">
-      <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="status-dot"></span> QA ENGINEER · SDET · AI-ASSISTED BUILDER</div>
-        <h1>I break products<br><em>to make them better.</em></h1>
-        <p class="hero-sub">Satyendra Kumar Namdeo builds, tests and improves real software with Playwright, Appium, Python and AI-assisted engineering.</p>
-        <div class="hero-ctas"><a href="#work" class="btn btn-primary magnetic">Explore my work <i class="bi bi-arrow-up-right"></i></a><a href="#contact" class="btn btn-ghost magnetic">Let’s connect</a></div>
-        <div class="hero-stats"><span><strong>Web</strong> Playwright</span><span><strong>Mobile</strong> Appium</span><span><strong>AI</strong> Prompt Engineering</span><span><strong>API</strong> + SQL</span></div>
-      </div>
+<section class="ticker"><div class="ticker-track"><span>PLAYWRIGHT</span><span>PYTEST</span><span>APPIUM</span><span>PYTHON</span><span>JAVASCRIPT / TS</span><span>REST APIs</span><span>SQL</span><span>AI QA</span><span>PLAYWRIGHT</span><span>PYTEST</span><span>APPIUM</span><span>PYTHON</span></div></section>
 
-      <div class="orb-wrap reveal" id="orbScene" aria-label="Interactive 3D QA and AI visual">
-        <div class="orb-ring ring-a"></div><div class="orb-ring ring-b"></div>
-        <div class="orb" id="orb"><div class="orb-core"></div><span class="orb-chip chip-one">QA</span><span class="orb-chip chip-two">AI</span><span class="orb-chip chip-three">E2E</span><span class="orb-chip chip-four">API</span></div>
-        <div class="orb-caption"><span id="orbCaption">Move your cursor around</span><i class="bi bi-stars"></i></div>
-      </div>
-    </section>
+<section id="about" class="section-pad wrap split reveal">
+  <div><p class="kicker">01 / PROFILE</p><h2>Technical QA with a builder's mindset.</h2></div>
+  <div class="rich-copy"><p>SDET / QA Automation Engineer with hands-on experience across web, mobile and iOS quality engineering. Current work at AM Webtech spans functional, regression, UI, backend, integration, API, database and E2E validation.</p><p>The differentiator is the hybrid workflow: AI accelerates test design, automation drafting, debugging, edge-case analysis and documentation, while requirements, validation, architecture and release quality remain human-owned.</p>
+    <div class="metrics"><div class="metric-card"><b>MCA 8.32</b><span>CGPA</span></div><div class="metric-card"><b>B.Tech 8.77</b><span>CGPA</span></div><div class="metric-card"><b>Web + Mobile</b><span>Automation</span></div><div class="metric-card"><b>AI-assisted</b><span>QA workflow</span></div></div>
+  </div>
+</section>
 
-    <section class="ticker"><div class="ticker-track"><span>PLAYWRIGHT</span><span>PYTEST</span><span>APPIUM</span><span>PYTHON</span><span>JAVASCRIPT</span><span>AI QA</span><span>REST APIs</span><span>SQL</span><span>PLAYWRIGHT</span><span>PYTEST</span><span>APPIUM</span><span>PYTHON</span></div></section>
+<section id="work" class="section-pad wrap">
+  <div class="section-head reveal"><div><p class="kicker">02 / SELECTED WORK</p><h2>Projects that feel like products.</h2></div><a class="text-link" href="explore.html">Open full project archive <i class="bi bi-arrow-up-right"></i></a></div>
+  <div class="project-grid">
+    <article class="project-card featured reveal" data-project="satylens"><div class="project-top"><span class="project-index">01</span><span class="project-type">PRODUCT ENGINEERING</span></div><img class="project-media" src="https://opengraph.githubassets.com/1/SanFlash/SatyLens" alt="SatyLens GitHub project preview" loading="lazy"><h3>SatyLens</h3><p>Chrome MV3 screenshot + recording platform with annotations, editor tooling, gallery, secure sharing, analytics, FastAPI/Supabase integrations and production-style testing.</p><div class="tags"><span>Chrome MV3</span><span>FastAPI</span><span>Supabase</span><span>Pytest</span></div><button class="project-more">Inspect system <i class="bi bi-arrow-right"></i></button></article>
+    <article class="project-card reveal" data-project="intellitest"><div class="project-top"><span class="project-index">02</span><span class="project-type">AI × QA</span></div><h3>IntelliTest AI</h3><p>AI-assisted test generation and browser-quality analysis for test cases, Playwright scripts, selectors, broken links, UI issues and structured bug reports.</p><div class="tags"><span>Flask</span><span>Playwright</span><span>OpenAI API</span></div><button class="project-more">Inspect system <i class="bi bi-arrow-right"></i></button></article>
+    <article class="project-card reveal" data-project="recruitsync"><div class="project-top"><span class="project-index">03</span><span class="project-type">AUTOMATION</span></div><h3>RecruitSync AI</h3><p>Explainable recruitment automation from scraping through candidate matching, change detection, human review and Excel export.</p><div class="tags"><span>Python</span><span>Playwright</span><span>Pandas</span></div><button class="project-more">Inspect system <i class="bi bi-arrow-right"></i></button></article>
+    <article class="project-card reveal" data-project="cricapp"><div class="project-top"><span class="project-index">04</span><span class="project-type">REAL-TIME PLATFORM</span></div><h3>Cric-App</h3><p>Cricket management, live scoring, ratings, predictions, tournaments, achievements, notifications and analytics in one backend-driven system.</p><div class="tags"><span>FastAPI</span><span>WebSockets</span><span>SQLAlchemy</span></div><button class="project-more">Inspect system <i class="bi bi-arrow-right"></i></button></article>
+    <article class="project-card reveal" data-project="droidtestx"><div class="project-top"><span class="project-index">05</span><span class="project-type">MOBILE QA</span></div><h3>DroidTestX</h3><p>Real-device mobile E2E framework covering login, product, cart, checkout, payment and order workflows with Appium + Pytest.</p><div class="tags"><span>Appium</span><span>UiAutomator2</span><span>POM</span></div><button class="project-more">Inspect system <i class="bi bi-arrow-right"></i></button></article>
+    <article class="project-card reveal" data-project="codesight"><div class="project-top"><span class="project-index">06</span><span class="project-type">DEV TOOL</span></div><h3>AI Code Analyzer</h3><p>Python code diagnostics with syntax, lint, complexity, maintainability and optional AI correction workflows.</p><div class="tags"><span>Flask</span><span>Python</span><span>AI</span></div><button class="project-more">Inspect system <i class="bi bi-arrow-right"></i></button></article>
+  </div>
+</section>
 
-    <section id="about" class="section-pad split reveal">
-      <div><p class="kicker">01 / PROFILE</p><h2>Technical QA, with a builder’s mindset.</h2></div>
-      <div class="rich-copy"><p>Currently a QA Engineer at AM Webtech, with hands-on work across web, mobile, API, database and AI-powered products.</p><p>My workflow is intentionally hybrid: use AI to accelerate test design, coding, debugging and documentation — while keeping architecture, validation, security and release quality human-owned.</p><div class="mini-metrics"><div><strong>MCA</strong><span>8.32 CGPA</span></div><div><strong>B.Tech</strong><span>8.77 CGPA</span></div><div><strong>Focus</strong><span>Quality Engineering</span></div></div></div>
-    </section>
+<section class="section-pad wrap"><div class="section-head reveal"><div><p class="kicker">03 / MOTION IDENTITY</p><h2>One avatar. Many interactions.</h2></div></div><div class="motion-lab reveal"><img src="data:image/webp;base64,UklGRjqVAABXRUJQVlA4IC6VAABwwA...ACTIONS_DATA_PLACEHOLDER..." alt="Satyendra avatar movement and expression reference sheet"><div class="motion-caption"><b>Avatar motion reference</b><span>standing · walking · presenting · laptop · phone · thinking · happy · wink</span></div></div></section>
 
-    <section id="work" class="section-pad">
-      <div class="section-head reveal"><div><p class="kicker">02 / SELECTED WORK</p><h2>Projects that feel like products.</h2></div><a class="text-link" href="https://github.com/SanFlash" target="_blank" rel="noreferrer">View GitHub <i class="bi bi-arrow-up-right"></i></a></div>
-      <div class="project-grid">
-        <article class="project-card featured reveal" data-project="intellitest"><div class="project-top"><span class="project-index">01</span><span class="project-type">AI × QA</span></div><h3>IntelliTest AI</h3><p>AI-powered testing platform that generates test cases, Playwright scripts and bug reports, while detecting links, UI issues and console errors.</p><div class="tags"><span>Flask</span><span>Playwright</span><span>OpenAI API</span></div><button class="project-more">Inspect project <i class="bi bi-arrow-right"></i></button></article>
-        <article class="project-card reveal" data-project="satylens"><div class="project-top"><span class="project-index">02</span><span class="project-type">PRODUCT</span></div><h3>SatyLens</h3><p>Manifest V3 screenshot and recording product with annotations, offline gallery, sharing, FastAPI/Supabase, storage integrations and automated tests.</p><div class="tags"><span>Chrome</span><span>FastAPI</span><span>Supabase</span><span>Pytest</span></div><button class="project-more">Inspect project <i class="bi bi-arrow-right"></i></button></article>
-        <article class="project-card reveal" data-project="recruitsync"><div class="project-top"><span class="project-index">03</span><span class="project-type">AUTOMATION</span></div><h3>RecruitSync AI</h3><p>Recruitment workflow from scraping to cleaning, explainable candidate matching, change detection, human review and Excel export.</p><div class="tags"><span>Python</span><span>Playwright</span><span>Pandas</span></div><button class="project-more">Inspect project <i class="bi bi-arrow-right"></i></button></article>
-        <article class="project-card reveal" data-project="cricapp"><div class="project-top"><span class="project-index">04</span><span class="project-type">REAL-TIME APP</span></div><h3>Cric-App</h3><p>Full-stack cricket management and analytics system with live scoring, performance/form/rating engines, predictions, tournaments and AI insights.</p><div class="tags"><span>FastAPI</span><span>SQLAlchemy</span><span>WebSockets</span></div><button class="project-more">Inspect project <i class="bi bi-arrow-right"></i></button></article>
-        <article class="project-card reveal" data-project="droidtestx"><div class="project-top"><span class="project-index">05</span><span class="project-type">MOBILE QA</span></div><h3>DroidTestX</h3><p>Mobile E2E framework covering login, product browsing, cart, checkout, shipping, payment and review workflows with Appium + Pytest.</p><div class="tags"><span>Appium</span><span>UiAutomator2</span><span>POM</span></div><button class="project-more">Inspect project <i class="bi bi-arrow-right"></i></button></article>
-        <article class="project-card reveal" data-project="codesight"><div class="project-top"><span class="project-index">06</span><span class="project-type">DEV TOOL</span></div><h3>AI Code Analyzer</h3><p>Flask utility for syntax, lint, complexity and maintainability analysis with optional AI suggestions and correction workflows.</p><div class="tags"><span>Flask</span><span>Python</span><span>AI</span></div><button class="project-more">Inspect project <i class="bi bi-arrow-right"></i></button></article>
-      </div>
-    </section>
+<section id="skills" class="section-pad wrap skills-section">
+  <div class="section-head reveal"><div><p class="kicker">04 / ENGINEERING STACK</p><h2>Tools I actually use.</h2></div><span class="muted" style="font-size:11px">Filter the project graph.</span></div>
+  <div class="skill-cloud reveal" id="skillCloud"><button class="skill active" data-filter="all">All</button><button class="skill" data-filter="playwright">Playwright</button><button class="skill" data-filter="pytest">Pytest</button><button class="skill" data-filter="appium">Appium</button><button class="skill" data-filter="python">Python</button><button class="skill" data-filter="javascript">JavaScript / TS</button><button class="skill" data-filter="api">REST / API</button><button class="skill" data-filter="sql">SQL / DB</button><button class="skill" data-filter="ai">AI / Prompting</button><button class="skill" data-filter="fastapi">FastAPI / Flask</button></div>
+  <div class="capability-grid reveal"><div class="capability-card"><i class="bi bi-window-stack"></i><h3>Web Quality</h3><p>Functional, regression, UI, integration, E2E, cross-browser and release-readiness validation.</p></div><div class="capability-card"><i class="bi bi-phone"></i><h3>Mobile Quality</h3><p>Android + iOS automation with Appium, UiAutomator2, XCUITest, WDA and real devices.</p></div><div class="capability-card"><i class="bi bi-database-check"></i><h3>Backend Confidence</h3><p>REST checks, database validation, business rules, data mapping and end-to-end integrity.</p></div><div class="capability-card"><i class="bi bi-stars"></i><h3>AI-Assisted QA</h3><p>Prompt-driven scenarios, automation acceleration, debugging, edge cases and documentation.</p></div></div>
+</section>
 
-    <section id="skills" class="section-pad skills-section">
-      <div class="section-head reveal"><div><p class="kicker">03 / STACK</p><h2>Tools I actually use.</h2></div><span class="stack-note">Click a stack to filter the projects.</span></div>
-      <div class="skill-cloud reveal" id="skillCloud"><button data-filter="all" class="skill active">All</button><button data-filter="Playwright" class="skill">Playwright</button><button data-filter="Pytest" class="skill">Pytest</button><button data-filter="Appium" class="skill">Appium</button><button data-filter="Python" class="skill">Python</button><button data-filter="JavaScript" class="skill">JavaScript / TS</button><button data-filter="API" class="skill">REST / API</button><button data-filter="SQL" class="skill">SQL / DB</button><button data-filter="AI" class="skill">AI / Prompting</button><button data-filter="FastAPI" class="skill">FastAPI / Flask</button></div>
-      <div class="capability-grid reveal"><div><i class="bi bi-window-stack"></i><h3>Web Quality</h3><p>Functional, regression, integration, UI, E2E, cross-browser and release-readiness validation.</p></div><div><i class="bi bi-phone"></i><h3>Mobile Quality</h3><p>Android + iOS automation, real devices, Appium, UiAutomator2, XCUITest and WDA.</p></div><div><i class="bi bi-database-check"></i><h3>Backend Confidence</h3><p>REST validation, database checks, data mapping, business rules and integrity verification.</p></div><div><i class="bi bi-stars"></i><h3>AI-Assisted QA</h3><p>Prompt-driven test design, automation acceleration, debugging, edge-case analysis and documentation.</p></div></div>
-    </section>
+<section class="section-pad wrap"><div class="section-head reveal"><div><p class="kicker">05 / PRODUCT DOMAINS</p><h2>Quality across real workflows.</h2></div></div><div class="domain-grid reveal"><div class="domain-card"><b>Healthcare AI</b><span>Clinician recording → AI extraction → OASIS → EMR integrations; WellSky, KanTime, Axxess validation.</span></div><div class="domain-card"><b>Behavioral Healthcare</b><span>Individuals, skills, assessments, therapists, sessions, reports, graphs, median, mode and outcomes.</span></div><div class="domain-card"><b>Digital Signature</b><span>Invoices, receipts, contracts, signing, dual-party confirmation and submission controls.</span></div><div class="domain-card"><b>Events / Marketplace</b><span>Registration, events, proposals, negotiation, acceptance, tickets and private sessions.</span></div><div class="domain-card"><b>Pharmaceutical AI</b><span>Conversational pharmaceutical-data retrieval, chatbot behavior, accuracy and consistency.</span></div><div class="domain-card"><b>Automation Products</b><span>Browser extensions, recording, screenshots, automation frameworks, AI analyzers and utilities.</span></div><div class="domain-card"><b>Sports Analytics</b><span>Cricket and table-tennis systems with live scoring, ratings, prediction and tournament logic.</span></div><div class="domain-card"><b>Data / BI</b><span>Python, Pandas, EDA, statistical analysis, Power BI, Tableau and visualization work.</span></div></div></section>
 
-    <section id="journey" class="section-pad">
-      <div class="section-head reveal"><div><p class="kicker">04 / JOURNEY</p><h2>From developer foundation to modern SDET.</h2></div></div>
-      <div class="timeline">
-        <article class="timeline-item reveal"><span>2024</span><div><h3>ASP.NET Developer Intern</h3><p>Vishwatech Education · C# · ASP.NET Web Forms · SQL Server · debugging</p></div></article>
-        <article class="timeline-item reveal"><span>2024–25</span><div><h3>Data Analyst Intern</h3><p>Anudip Foundation · SQL · Python/Pandas · ETL · Power BI · EDA</p></div></article>
-        <article class="timeline-item current reveal"><span>2025–Now</span><div><h3>QA Engineer · AM Webtech</h3><p>Web + mobile automation, APIs, databases, AI-powered products, cross-device validation and AI-assisted QA.</p></div></article>
-        <article class="timeline-item reveal"><span>Always</span><div><h3>Independent Builder</h3><p>AI tools, browser extensions, analytics platforms, automation frameworks and full-stack experiments across the GitHub portfolio.</p></div></article>
-      </div>
-    </section>
+<section id="journey" class="section-pad wrap"><div class="section-head reveal"><div><p class="kicker">06 / JOURNEY</p><h2>Developer foundation → modern SDET.</h2></div><a class="text-link" href="explore.html#experience">Explore full experience <i class="bi bi-arrow-up-right"></i></a></div><div class="timeline"><article class="timeline-item reveal"><span>2024</span><div><h3>ASP.NET Developer Intern</h3><p>Vishwatech Education · C# · ASP.NET Web Forms · SQL Server · debugging.</p></div></article><article class="timeline-item reveal"><span>2024–25</span><div><h3>Data Analyst Intern</h3><p>Anudip Foundation · SQL · Python/Pandas · ETL · Power BI · EDA.</p></div></article><article class="timeline-item current reveal"><span>Dec 2024–Now</span><div><h3>QA Engineer / QA Automation · AM Webtech</h3><p>Manual + automated web/mobile testing, Playwright, Appium, API/database validation, cross-device coverage, AI-assisted QA and release-readiness.</p></div></article><article class="timeline-item reveal"><span>Education</span><div><h3>MCA · 8.32 CGPA</h3><p>Supported by B.Tech · 8.77 CGPA and a development foundation across Python, C#, JavaScript/TypeScript, Flask, ASP.NET and SQL.</p></div></article></div></section>
 
-    <section id="contact" class="section-pad contact-panel reveal">
-      <div class="contact-card glass"><div><p class="kicker">05 / CONNECT</p><h2>Have a product that deserves better testing?</h2><p>Let’s talk QA automation, AI-assisted testing, product quality or interesting engineering problems.</p></div><div class="contact-actions"><a class="btn btn-primary magnetic" href="mailto:satyendranamdeo78130@gmail.com">Email me <i class="bi bi-envelope"></i></a><a class="btn btn-ghost magnetic" href="https://www.linkedin.com/in/satyendra-namdeo/" target="_blank" rel="noreferrer">LinkedIn <i class="bi bi-linkedin"></i></a><a class="btn btn-ghost magnetic" href="https://github.com/SanFlash" target="_blank" rel="noreferrer">GitHub <i class="bi bi-github"></i></a></div></div>
-    </section>
-  </main>
-
-  <footer class="footer"><span>© 2026 Satyendra Kumar Namdeo</span><span>Built with curiosity, tests & a suspicious amount of caffeine.</span></footer>
-
-  <div class="modal" id="projectModal" aria-hidden="true"><div class="modal-backdrop"></div><div class="modal-card glass" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close"><i class="bi bi-x-lg"></i></button><p class="kicker" id="modalType">PROJECT</p><h2 id="modalTitle">Project</h2><p id="modalBody"></p><div class="modal-tags" id="modalTags"></div><a id="modalLink" class="btn btn-primary" target="_blank" rel="noreferrer">Open on GitHub <i class="bi bi-arrow-up-right"></i></a></div></div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<section id="contact" class="section-pad wrap"><div class="contact-card glass reveal"><div><p class="kicker">07 / CONNECT</p><h2>Have a product that deserves better testing?</h2><p>Let’s talk QA automation, AI-assisted testing, product quality or interesting engineering problems.</p></div><div class="contact-actions"><a class="btn btn-primary magnetic" href="mailto:satyendranamdeo78130@gmail.com">Email <i class="bi bi-envelope"></i></a><a class="btn btn-ghost magnetic" href="https://www.linkedin.com/in/satyendra-namdeo/" target="_blank" rel="noreferrer">LinkedIn <i class="bi bi-linkedin"></i></a><a class="btn btn-ghost magnetic" href="https://github.com/SanFlash" target="_blank" rel="noreferrer">GitHub <i class="bi bi-github"></i></a><a class="btn btn-ghost magnetic" href="explore.html">Full portfolio <i class="bi bi-arrow-up-right"></i></a></div></div></section>
+</main>
+<footer class="footer"><span>© <span data-year></span> Satyendra Kumar Namdeo</span><span>Built with curiosity, tests & a suspicious amount of caffeine.</span></footer>
+<div class="modal" id="projectModal" aria-hidden="true"><div class="modal-backdrop"></div><div class="modal-card glass" role="dialog" aria-modal="true"><button class="modal-close" id="modalClose" aria-label="Close"><i class="bi bi-x-lg"></i></button><p class="kicker" id="modalType">PROJECT</p><h2 id="modalTitle">Project</h2><p id="modalBody"></p><div class="modal-tags" id="modalTags"></div><a id="modalLink" class="btn btn-primary" target="_blank" rel="noreferrer">Open on GitHub <i class="bi bi-arrow-up-right"></i></a></div></div>
+<script src="script.js"></script></body></html>
